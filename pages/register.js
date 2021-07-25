@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function register() {
   return (
-    <div className='h-screen w-screen overflow-x-hidden py-8 px-5 flex items-center'>
+    <div className='h-screen w-screen overflow-x-hidden py-8 px-5 sm:flex sm:items-center'>
       <Head>
         <title>CultureHypes - Register</title>
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
