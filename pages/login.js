@@ -9,7 +9,6 @@ export default function login() {
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
       </Head>
       <div className='mx-auto max-w-sm text-center'>
-        <img className='w-24 mx-auto mb-6' src='/icons/sign-in.svg' alt='Sign In' />
         <div className='mb-6'>
           <h2 className='font-bold text-3xl mb-1'>Welcome Back!</h2>
           <p className=''>Please sign in to your account.</p>

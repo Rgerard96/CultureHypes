@@ -9,7 +9,6 @@ export default function register() {
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
       </Head>
       <div className='mx-auto max-w-sm text-center'>
-      <img className='w-24 mx-auto mb-6' src='/icons/gear.svg' alt='Sign In' />
         <div className='mb-6'>
           <h2 className='font-bold text-3xl mb-1'>Create new account</h2>
           <p className=''>Please fill in the form to continue.</p>
