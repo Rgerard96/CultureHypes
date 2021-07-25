@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function register() {
   return (
-    <div className='h-screen w-screen overflow-x-hidden py-8 px-5'>
+    <div className='h-screen w-screen overflow-x-hidden py-8 px-5 flex items-center'>
       <Head>
         <title>CultureHypes - Register</title>
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
@@ -57,7 +57,7 @@ export default function register() {
           <p>
             Have an account?{' '}
             <Link href='/login'>
-              <a className='text-darkGrey font-bold cursor-pointer break-normal'>
+              <a className='text-darkGrey font-bold cursor-pointer break-normal hover:text-teal'>
                 Log In
               </a>
             </Link>
