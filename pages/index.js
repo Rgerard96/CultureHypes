@@ -1,13 +1,14 @@
-import Head from 'next/head'
+import Head from 'next/head';
+import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
+    <div className='min-h-screen w-screen'>
       <Head>
         <title>Culture Hypes</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel='icon' href='/favicon.ico' />
       </Head>
-
+      
     </div>
-  )
+  );
 }

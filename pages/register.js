@@ -51,13 +51,13 @@ export default function register() {
           />
         </div>
         <div>
-          <button className='bg-teal w-full py-2 px-3 rounded text-white mb-4'>
+          <button className='bg-cred w-full py-2 px-3 rounded text-white mb-4'>
             Sign Up
           </button>
           <p>
             Have an account?{' '}
             <Link href='/login'>
-              <a className='text-darkGrey font-bold cursor-pointer break-normal hover:text-teal'>
+              <a className='text-darkGrey font-bold cursor-pointer break-normal hover:text-cred'>
                 Log In
               </a>
             </Link>

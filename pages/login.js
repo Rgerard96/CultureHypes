@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function login() {
   return (
-    <div className='h-screen w-screen py-8 px-5 sm:flex sm:items-center'>
+    <div className='h-screen w-screen py-8 px-5 sm:flex sm:items-center overflow-x-hidden'>
       <Head>
         <title>CultureHypes - Login</title>
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
@@ -29,17 +29,17 @@ export default function login() {
             placeholder='Password'
           />
           <Link href='/forgot-password'>
-            <p className='text-right cursor-pointer hover:text-teal'>Forgot Password?</p>
+            <p className='text-right cursor-pointer hover:text-cred'>Forgot Password?</p>
           </Link>
         </div>
         <div>
-          <button className='bg-teal w-full py-2 px-3 rounded text-white mb-4'>
+          <button className='bg-cred w-full py-2 px-3 rounded text-white mb-4'>
             Sign In
           </button>
           <p>
             Don't have an account?{' '}
             <Link href='/register'>
-              <a className='text-darkGrey font-bold cursor-pointer break-normal hover:text-teal'>
+              <a className='text-darkGrey font-bold cursor-pointer break-normal hover:text-cred'>
                 Sign Up
               </a>
             </Link>

@@ -7,7 +7,7 @@ module.exports = {
       colors: {
         dark: '#222831',
         darkGrey: '#393E46',
-        teal: '#00ADB5',
+        cred: '#E84545',
         lightGrey: '#EEEEEE',
       },
     },
@@ -15,5 +15,5 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/forms')],
 };

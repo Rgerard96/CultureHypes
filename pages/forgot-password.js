@@ -27,11 +27,11 @@ export default function forgotPassword() {
           />
         </div>
         <div>
-          <button className='bg-teal w-full py-2 px-3 rounded text-white mb-6'>
+          <button className='bg-cred w-full py-2 px-3 rounded text-white mb-6'>
             Send
           </button>
           <Link href='/login'>
-            <p className='cursor-pointer break-normal hover:text-teal'>
+            <p className='cursor-pointer break-normal hover:text-cred'>
               Back to login
             </p>
           </Link>
