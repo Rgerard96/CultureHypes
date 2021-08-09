@@ -53,7 +53,7 @@ export default function checkout() {
               </div>
             </div>
             <div className='mb-8'>
-              <p className='text-cred font-semibold'>Delivery Info</p>
+              <p className='text-cred font-semibold mb-4'>Delivery Info</p>
               <div className='grid sm:grid-cols-2 gap-x-8'>
                 <div className='col-span-2'>
                   <label className='font-semibold'>Address</label>
@@ -87,7 +87,7 @@ export default function checkout() {
                 </div>
               </div>
             </div>
-            <div className='mb-8'>
+            <div>
               <p className='text-cred font-semibold mb-4'>Payment Details</p>
               <p className='font-semibold'>Payment Method</p>
               <div className='grid sm:grid-cols-2 gap-x-8'>
