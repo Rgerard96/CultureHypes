@@ -2,10 +2,9 @@ import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 
-
 export default function forgotPassword() {
   return (
-    <div className='h-screen w-screen py-8 px-5 sm:flex sm:items-center'>
+    <div className='h-screen py-8 px-5 sm:flex sm:items-center'>
       <Head>
         <title>CultureHypes - Forgot Password</title>
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
@@ -17,13 +16,14 @@ export default function forgotPassword() {
             Enter your registered email below to receive a temporary password.
           </p>
         </div>
-        <div>
+        <div className='text-left'>
+          <label className='font-semibold'>Email Address</label>
           <input
-            className='focus:outline-none mb-6 bg-transparent border border-darkGrey rounded py-2 px-3 w-full'
+            className='placeholder-lightGrey focus:ring-2 focus:ring-cred focus:border-transparent focus:outline-none mt-2 mb-6 bg-transparent border border-darkGrey rounded py-2 px-3 w-full'
             type='text'
             name='email'
             id='email'
-            placeholder='Email Address'
+            placeholder='your@email.com'
           />
         </div>
         <div>

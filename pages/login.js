@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function login() {
   return (
-    <div className='h-screen w-screen py-8 px-5 sm:flex sm:items-center overflow-x-hidden'>
+    <div className='h-screen py-8 px-5 sm:flex sm:items-center overflow-x-hidden'>
       <Head>
         <title>CultureHypes - Login</title>
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
@@ -13,20 +13,22 @@ export default function login() {
           <h2 className='font-bold text-3xl mb-1'>Welcome Back!</h2>
           <p className=''>Please sign in to your account.</p>
         </div>
-        <div className='mb-6'>
+        <div className='mb-6 text-left'>
+        <label className='font-semibold'>Email Address</label>
           <input
-            className='focus:outline-none mb-6 bg-transparent border border-darkGrey rounded py-2 px-3 w-full'
+            className='placeholder-lightGrey focus:ring-2 focus:ring-cred focus:border-transparent focus:outline-none mt-2 mb-6 bg-transparent border border-darkGrey rounded py-2 px-3 w-full'
             type='text'
             name='email'
             id='email'
-            placeholder='Email Address'
+            placeholder='your@email.com'
           />
+          <label className='font-semibold'>Password</label>
           <input
-            className='focus:outline-none mb-6 bg-transparent border border-darkGrey rounded py-2 px-3 w-full'
+            className='placeholder-lightGrey focus:ring-2 focus:ring-cred focus:border-transparent focus:outline-none mt-2 mb-6 bg-transparent border border-darkGrey rounded py-2 px-3 w-full'
             type='password'
             name='password'
             id='password'
-            placeholder='Password'
+            placeholder='•••••••••'
           />
           <Link href='/forgot-password'>
             <p className='text-right cursor-pointer hover:text-cred'>Forgot Password?</p>

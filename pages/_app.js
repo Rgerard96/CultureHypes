@@ -3,10 +3,10 @@ import Header from '../components/Header';
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div className='text-darkGrey overflow-x-hidden'>
-      <Header />
-      <Component {...pageProps} />
-    </div>
+        <div className='text-darkGrey'>
+          <Header />
+          <Component {...pageProps} />
+        </div>
   );
 }
 
