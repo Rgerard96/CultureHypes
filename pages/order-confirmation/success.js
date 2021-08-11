@@ -4,12 +4,12 @@ import React from 'react';
 
 export default function success() {
   return (
-    <div className='py-8 px-5 sm:flex sm:items-center w-80 mx-auto'>
+    <div className='py-8 px-5 sm:flex sm:items-center'>
       <Head>
         <title>CultureHypes - Order Confirmation Successful</title>
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
       </Head>
-      <div className='w-full text-center flex flex-col items-center'>
+      <div className='mx-auto max-w-sm text-center flex flex-col items-center'>
         <img
           className='w-24 mb-4'
           src='/icons/order-success.svg'
@@ -39,12 +39,12 @@ export default function success() {
           </div>
         </div>
         <Link href='/'>
-          <button className='bg-darkGrey w-full py-2 px-3 rounded text-white mb-4'>
+          <button className='bg-darkGrey w-96 py-2 px-3 rounded text-white mb-4'>
             Order Details
           </button>
         </Link>
         <Link href='/'>
-          <button className='bg-cred w-full py-2 px-3 rounded text-white'>
+          <button className='bg-cred w-96 py-2 px-3 rounded text-white'>
             Back to Home
           </button>
         </Link>
