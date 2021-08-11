@@ -9,7 +9,7 @@ export default function failed() {
         <title>CultureHypes - Order Confirmation Failed</title>
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
       </Head>
-      <div className='mx-auto max-w-sm text-center flex flex-col items-center'>
+      <div className='mx-auto max-w-sm sm:w-96 text-center flex flex-col items-center'>
         <img
           className='w-24 mb-4'
           src='/icons/order-failed.svg'
@@ -22,7 +22,7 @@ export default function failed() {
           <h4>Payment for your order could not be proceed, try again.</h4>
         </div>
         <Link href='/checkout'>
-          <button className='bg-cred w-96 py-2 px-3 rounded text-white mb-4'>
+          <button className='bg-cred w-full py-2 px-3 rounded text-white mb-4'>
             Back to Checkout
           </button>
         </Link>

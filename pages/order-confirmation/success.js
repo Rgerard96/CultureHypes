@@ -9,7 +9,7 @@ export default function success() {
         <title>CultureHypes - Order Confirmation Successful</title>
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
       </Head>
-      <div className='mx-auto max-w-sm text-center flex flex-col items-center'>
+      <div className='mx-auto max-w-sm sm:w-96 text-center flex flex-col items-center'>
         <img
           className='w-24 mb-4'
           src='/icons/order-success.svg'
@@ -38,15 +38,15 @@ export default function success() {
             <p>$142.75</p>
           </div>
         </div>
-        <Link href='/'>
-          <button className='bg-darkGrey w-96 py-2 px-3 rounded text-white mb-4'>
+        <Link href='/checkout'>
+          <button className='bg-cred w-full py-2 px-3 rounded text-white mb-4'>
             Order Details
           </button>
         </Link>
         <Link href='/'>
-          <button className='bg-cred w-96 py-2 px-3 rounded text-white'>
+          <a className='text-darkGrey cursor-pointer break-normal hover:text-cred'>
             Back to Home
-          </button>
+          </a>
         </Link>
       </div>
     </div>
