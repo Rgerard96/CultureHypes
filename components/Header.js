@@ -8,10 +8,10 @@ export default function Header() {
         <h1>CultureHypes</h1>
         <div>
           <Link href='/checkout'>
-            <a className='hover:text-cred'>Checkout</a>
+            <a className='hover:text-primary'>Checkout</a>
           </Link>
           <Link href='/login'>
-            <a className='ml-8 hover:text-cred'>Login</a>
+            <a className='ml-8 hover:text-primary'>Login</a>
           </Link>
         </div>
       </div>

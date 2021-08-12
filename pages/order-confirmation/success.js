@@ -39,12 +39,12 @@ export default function success() {
           </div>
         </div>
         <Link href='/checkout'>
-          <button className='bg-cred w-full py-2 px-3 rounded text-white mb-4'>
+          <button className='bg-primary w-full py-2 px-3 rounded text-white mb-4'>
             Order Details
           </button>
         </Link>
         <Link href='/'>
-          <a className='text-darkGrey cursor-pointer break-normal hover:text-cred'>
+          <a className='text-darkGrey cursor-pointer break-normal hover:text-primary'>
             Back to Home
           </a>
         </Link>

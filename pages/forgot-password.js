@@ -19,7 +19,7 @@ export default function forgotPassword() {
         <div className='text-left'>
           <label className='font-semibold'>Email Address</label>
           <input
-            className='placeholder-lightGrey focus:ring-2 focus:ring-cred focus:border-transparent focus:outline-none mt-2 mb-6 bg-transparent border border-darkGrey rounded py-2 px-3 w-full'
+            className='placeholder-lightGrey focus:ring-2 focus:ring-primary focus:border-transparent focus:outline-none mt-2 mb-6 bg-transparent border border-darkGrey rounded py-2 px-3 w-full'
             type='text'
             name='email'
             id='email'
@@ -27,11 +27,11 @@ export default function forgotPassword() {
           />
         </div>
         <div>
-          <button className='bg-cred w-full py-2 px-3 rounded text-white mb-6'>
+          <button className='bg-primary w-full py-2 px-3 rounded text-white mb-6'>
             Send
           </button>
           <Link href='/login'>
-            <p className='cursor-pointer break-normal hover:text-cred'>
+            <p className='cursor-pointer break-normal hover:text-primary'>
               Back to login
             </p>
           </Link>

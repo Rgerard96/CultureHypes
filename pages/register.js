@@ -16,7 +16,7 @@ export default function register() {
         <div className='text-left'>
           <label className='font-semibold'>Full Name</label>
           <input
-            className='placeholder-lightGrey focus:ring-2 focus:ring-cred focus:border-transparent focus:outline-none mt-2 mb-6 bg-transparent border border-darkGrey rounded py-2 px-3 w-full'
+            className='placeholder-lightGrey focus:ring-2 focus:ring-primary focus:border-transparent focus:outline-none mt-2 mb-6 bg-transparent border border-darkGrey rounded py-2 px-3 w-full'
             type='text'
             name='fullName'
             id='fullName'
@@ -24,7 +24,7 @@ export default function register() {
           />
           <label className='font-semibold'>Email Address</label>
           <input
-            className='placeholder-lightGrey focus:ring-2 focus:ring-cred focus:border-transparent focus:outline-none mt-2 mb-6 bg-transparent border border-darkGrey rounded py-2 px-3 w-full'
+            className='placeholder-lightGrey focus:ring-2 focus:ring-primary focus:border-transparent focus:outline-none mt-2 mb-6 bg-transparent border border-darkGrey rounded py-2 px-3 w-full'
             type='text'
             name='email'
             id='email'
@@ -32,7 +32,7 @@ export default function register() {
           />
           <label className='font-semibold'>Phone Number</label>
           <input
-            className='placeholder-lightGrey focus:ring-2 focus:ring-cred focus:border-transparent focus:outline-none mt-2 mb-6 bg-transparent border border-darkGrey rounded py-2 px-3 w-full'
+            className='placeholder-lightGrey focus:ring-2 focus:ring-primary focus:border-transparent focus:outline-none mt-2 mb-6 bg-transparent border border-darkGrey rounded py-2 px-3 w-full'
             type='tel'
             name='phone'
             id='phone'
@@ -40,7 +40,7 @@ export default function register() {
           />
           <label className='font-semibold'>Password</label>
           <input
-            className='placeholder-lightGrey focus:ring-2 focus:ring-cred focus:border-transparent focus:outline-none mt-2 mb-6 bg-transparent border border-darkGrey rounded py-2 px-3 w-full'
+            className='placeholder-lightGrey focus:ring-2 focus:ring-primary focus:border-transparent focus:outline-none mt-2 mb-6 bg-transparent border border-darkGrey rounded py-2 px-3 w-full'
             type='password'
             name='password'
             id='password'
@@ -48,7 +48,7 @@ export default function register() {
           />
           <label className='font-semibold'>Confirm Password</label>
           <input
-            className='placeholder-lightGrey focus:ring-2 focus:ring-cred focus:border-transparent focus:outline-none mt-2 mb-6 bg-transparent border border-darkGrey rounded py-2 px-3 w-full'
+            className='placeholder-lightGrey focus:ring-2 focus:ring-primary focus:border-transparent focus:outline-none mt-2 mb-6 bg-transparent border border-darkGrey rounded py-2 px-3 w-full'
             type='password'
             name='confirmPassword'
             id='confirmPassword'
@@ -56,13 +56,13 @@ export default function register() {
           />
         </div>
         <div>
-          <button className='bg-cred w-full py-2 px-3 rounded text-white mb-4'>
+          <button className='bg-primary w-full py-2 px-3 rounded text-white mb-4'>
             Sign Up
           </button>
           <p>
             Have an account?{' '}
             <Link href='/login'>
-              <a className='text-darkGrey font-bold cursor-pointer break-normal hover:text-cred'>
+              <a className='text-darkGrey font-bold cursor-pointer break-normal hover:text-primary'>
                 Log In
               </a>
             </Link>

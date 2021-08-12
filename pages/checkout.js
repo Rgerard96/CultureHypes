@@ -12,7 +12,7 @@ export default function checkout() {
       <div className='container mx-auto'>
         <div className='mb-5'>
           <a
-            className='cursor-pointer hover:text-cred'
+            className='cursor-pointer hover:text-primary'
             onClick={() => router.back()}
           >
             Go Back
@@ -25,7 +25,7 @@ export default function checkout() {
               <div className='grid sm:grid-cols-2 gap-x-8'>
                 <div className='focus:outline-none mb-6 bg-transparent border border-darkGrey rounded py-2 px-5 w-full'>
                   <input
-                    className='placeholder-lightGrey mr-4 text-cred focus:ring-0 focus:ring-offset-0'
+                    className='placeholder-lightGrey mr-4 text-primary focus:ring-0 focus:ring-offset-0'
                     type='radio'
                     name='delivery'
                     id='delivery'
@@ -34,9 +34,9 @@ export default function checkout() {
                   />
                   <label>Delivery</label>
                 </div>
-                <div className='focus:outline-none mb-6 bg-transparent border border-darkGrey rounded py-2 px-5 w-full group-focus:border-cred'>
+                <div className='focus:outline-none mb-6 bg-transparent border border-darkGrey rounded py-2 px-5 w-full group-focus:border-primary'>
                   <input
-                    className='placeholder-lightGrey mr-4 text-cred focus:ring-0 focus:ring-offset-0'
+                    className='placeholder-lightGrey mr-4 text-primary focus:ring-0 focus:ring-offset-0'
                     type='radio'
                     name='pickup'
                     id='pickup'
@@ -48,12 +48,12 @@ export default function checkout() {
               </div>
             </div>
             <div className='mb-4'>
-              <p className='text-cred font-semibold mb-4'>Billing Details</p>
+              <p className='text-primary font-semibold mb-4'>Billing Details</p>
               <div className='grid sm:grid-cols-2 gap-x-8'>
                 <div className='col-span-2'>
                   <label className='font-semibold'>Full Name</label>
                   <input
-                    className='placeholder-lightGrey focus:ring-2 focus:ring-cred focus:border-transparent focus:outline-none mt-2 mb-6 bg-transparent border border-darkGrey rounded py-2 px-3 w-full'
+                    className='placeholder-lightGrey focus:ring-2 focus:ring-primary focus:border-transparent focus:outline-none mt-2 mb-6 bg-transparent border border-darkGrey rounded py-2 px-3 w-full'
                     type='text'
                     name='fullName'
                     id='fullName'
@@ -63,7 +63,7 @@ export default function checkout() {
                 <div className='col-span-2 sm:col-span-1'>
                   <label className='font-semibold'>Email Address</label>
                   <input
-                    className='placeholder-lightGrey focus:ring-2 focus:ring-cred focus:border-transparent focus:outline-none mt-2 mb-6 bg-transparent border border-darkGrey rounded py-2 px-3 w-full'
+                    className='placeholder-lightGrey focus:ring-2 focus:ring-primary focus:border-transparent focus:outline-none mt-2 mb-6 bg-transparent border border-darkGrey rounded py-2 px-3 w-full'
                     type='text'
                     name='email'
                     id='email'
@@ -73,7 +73,7 @@ export default function checkout() {
                 <div className='col-span-2 sm:col-span-1'>
                   <label className='font-semibold'>Phone Number</label>
                   <input
-                    className='placeholder-lightGrey focus:ring-2 focus:ring-cred focus:border-transparent focus:outline-none mt-2 mb-6 bg-transparent border border-darkGrey rounded py-2 px-3 w-full'
+                    className='placeholder-lightGrey focus:ring-2 focus:ring-primary focus:border-transparent focus:outline-none mt-2 mb-6 bg-transparent border border-darkGrey rounded py-2 px-3 w-full'
                     type='tel'
                     name='phone'
                     id='phone'
@@ -83,12 +83,12 @@ export default function checkout() {
               </div>
             </div>
             <div className='mb-4'>
-              <p className='text-cred font-semibold mb-4'>Delivery Info</p>
+              <p className='text-primary font-semibold mb-4'>Delivery Info</p>
               <div className='grid sm:grid-cols-2 gap-x-8'>
                 <div className='col-span-2'>
                   <label className='font-semibold'>Address</label>
                   <input
-                    className='placeholder-lightGrey focus:ring-2 focus:ring-cred focus:border-transparent focus:outline-none mt-2 mb-6 bg-transparent border border-darkGrey rounded py-2 px-3 w-full'
+                    className='placeholder-lightGrey focus:ring-2 focus:ring-primary focus:border-transparent focus:outline-none mt-2 mb-6 bg-transparent border border-darkGrey rounded py-2 px-3 w-full'
                     type='text'
                     name='address'
                     id='address'
@@ -98,7 +98,7 @@ export default function checkout() {
                 <div className='col-span-2 sm:col-span-1'>
                   <label className='font-semibold'>ZIP Code</label>
                   <input
-                    className='placeholder-lightGrey focus:ring-2 focus:ring-cred focus:border-transparent focus:outline-none mt-2 mb-6 bg-transparent border border-darkGrey rounded py-2 px-3 w-full'
+                    className='placeholder-lightGrey focus:ring-2 focus:ring-primary focus:border-transparent focus:outline-none mt-2 mb-6 bg-transparent border border-darkGrey rounded py-2 px-3 w-full'
                     type='text'
                     name='zipCode'
                     id='zipCode'
@@ -108,7 +108,7 @@ export default function checkout() {
                 <div className='col-span-2 sm:col-span-1'>
                   <label className='font-semibold'>City</label>
                   <input
-                    className='placeholder-lightGrey focus:ring-2 focus:ring-cred focus:border-transparent focus:outline-none mt-2 mb-6 bg-transparent border border-darkGrey rounded py-2 px-3 w-full'
+                    className='placeholder-lightGrey focus:ring-2 focus:ring-primary focus:border-transparent focus:outline-none mt-2 mb-6 bg-transparent border border-darkGrey rounded py-2 px-3 w-full'
                     type='text'
                     name='city'
                     id='city'
@@ -118,12 +118,12 @@ export default function checkout() {
               </div>
             </div>
             <div>
-              <p className='text-cred font-semibold mb-4'>Payment Details</p>
+              <p className='text-primary font-semibold mb-4'>Payment Details</p>
               <p className='font-semibold'>Payment Method</p>
               <div className='grid sm:grid-cols-2 gap-x-8'>
-                <div className='focus:outline-none mt-2 mb-6 bg-transparent border border-darkGrey rounded py-2 px-5 w-full group-focus:border-cred'>
+                <div className='focus:outline-none mt-2 mb-6 bg-transparent border border-darkGrey rounded py-2 px-5 w-full group-focus:border-primary'>
                   <input
-                    className='placeholder-lightGrey mr-4 text-cred focus:ring-0 focus:ring-offset-0'
+                    className='placeholder-lightGrey mr-4 text-primary focus:ring-0 focus:ring-offset-0'
                     type='radio'
                     name='iDeal'
                     id='iDeal'
@@ -134,7 +134,7 @@ export default function checkout() {
                 </div>
                 <div className='focus:outline-none mt-2 mb-6 bg-transparent border border-darkGrey rounded py-2 px-5 w-full'>
                   <input
-                    className='placeholder-lightGrey mr-4 text-cred focus:ring-0 focus:ring-offset-0'
+                    className='placeholder-lightGrey mr-4 text-primary focus:ring-0 focus:ring-offset-0'
                     type='radio'
                     name='paypal'
                     id='paypal'
@@ -150,7 +150,7 @@ export default function checkout() {
             <h2 className='font-bold text-3xl mb-8'>Order Summary</h2>
             <div className='p-5 w-full h-80 bg-gray-100 rounded-md'>
               <Link href='/order-confirmation/success'>
-                <button className='bg-cred w-full py-2 px-3 rounded text-white mb-4'>
+                <button className='bg-primary w-full py-2 px-3 rounded text-white mb-4'>
                   Success
                 </button>
               </Link>
