@@ -10,7 +10,7 @@ export default function register() {
       </Head>
       <div className='mx-auto max-w-sm text-center'>
         <div className='mb-6'>
-          <h2 className='font-bold text-3xl mb-1'>Create new account</h2>
+          <h2 className='font-bold text-2xl mb-1'>Create new account</h2>
           <p className=''>Please fill in the form to continue.</p>
         </div>
         <div className='text-left'>

@@ -11,7 +11,7 @@ export default function forgotPassword() {
       </Head>
       <div className='mx-auto max-w-sm text-center'>
         <div className='mb-6'>
-          <h2 className='font-bold text-3xl mb-1'>Forgot your password?</h2>
+          <h2 className='font-bold text-2xl mb-1'>Forgot your password?</h2>
           <p className=''>
             Enter your registered email below to receive a temporary password.
           </p>

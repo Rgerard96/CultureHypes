@@ -10,6 +10,9 @@ module.exports = {
         primary: '#3490DE',
         lightGrey: '#b9b9b9',
       },
+      spacing: {
+        102: '30rem',
+      },
     },
   },
   variants: {

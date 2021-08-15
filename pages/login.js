@@ -10,7 +10,7 @@ export default function login() {
       </Head>
       <div className='mx-auto max-w-sm text-center'>
         <div className='mb-6'>
-          <h2 className='font-bold text-3xl mb-1'>Welcome Back!</h2>
+          <h2 className='font-bold text-2xl mb-1'>Welcome Back!</h2>
           <p className=''>Please sign in to your account.</p>
         </div>
         <div className='mb-6 text-left'>

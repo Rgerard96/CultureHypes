@@ -10,17 +10,17 @@ export default function checkout() {
   return (
     <div className='p-5 sm:px-8'>
       <div className='container mx-auto'>
-        <div className='mb-5'>
-          <a
-            className='cursor-pointer hover:text-primary'
-            onClick={() => router.back()}
-          >
-            Go Back
-          </a>
+        <div className='mb-5 py-1 flex items-center cursor-pointer' onClick={() => router.back()}>
+          <img
+            className='w-3 mr-1'
+            src='/icons/left-arrow.svg'
+            alt='Go back arrow'
+          />
+          <a className='text-xs'>Back</a>
         </div>
         <div className='flex flex-col lg:flex-row sm:justify-between'>
           <div className='w-full lg:w-4/6 xl:w-3/6 mb-8 lg:mb-0 sm:mr-8'>
-            <h2 className='font-bold text-3xl mb-8'>Checkout</h2>
+            <h2 className='font-bold text-2xl mb-8'>Checkout</h2>
             <div className='mb-4'>
               <div className='grid sm:grid-cols-2 gap-x-8'>
                 <div className='focus:outline-none mb-6 bg-transparent border border-darkGrey rounded py-2 px-5 w-full'>
@@ -84,18 +84,38 @@ export default function checkout() {
             </div>
             <div className='mb-4'>
               <p className='text-primary font-semibold mb-4'>Delivery Info</p>
-              <div className='grid sm:grid-cols-2 gap-x-8'>
-                <div className='col-span-2'>
-                  <label className='font-semibold'>Address</label>
+              <div className='grid sm:grid-cols-4 gap-x-8'>
+                <div className='col-span-4 sm:col-span-2'>
+                  <label className='font-semibold'>Street Name</label>
                   <input
                     className='placeholder-lightGrey focus:ring-2 focus:ring-primary focus:border-transparent focus:outline-none mt-2 mb-6 bg-transparent border border-darkGrey rounded py-2 px-3 w-full'
                     type='text'
-                    name='address'
-                    id='address'
-                    placeholder='Haringvliet 32'
+                    name='streetName'
+                    id='streetName'
+                    placeholder='Haringvliet'
                   />
                 </div>
                 <div className='col-span-2 sm:col-span-1'>
+                  <label className='font-semibold'>House Number</label>
+                  <input
+                    className='placeholder-lightGrey focus:ring-2 focus:ring-primary focus:border-transparent focus:outline-none mt-2 mb-6 bg-transparent border border-darkGrey rounded py-2 px-3 w-full'
+                    type='text'
+                    name='houseNumber'
+                    id='houseNumber'
+                    placeholder='32'
+                  />
+                </div>
+                <div className='col-span-2 sm:col-span-1'>
+                  <label className='font-semibold'>Addition</label>
+                  <input
+                    className='placeholder-lightGrey focus:ring-2 focus:ring-primary focus:border-transparent focus:outline-none mt-2 mb-6 bg-transparent border border-darkGrey rounded py-2 px-3 w-full'
+                    type='text'
+                    name='addition'
+                    id='addition'
+                    placeholder='C'
+                  />
+                </div>
+                <div className='col-span-4 sm:col-span-2'>
                   <label className='font-semibold'>ZIP Code</label>
                   <input
                     className='placeholder-lightGrey focus:ring-2 focus:ring-primary focus:border-transparent focus:outline-none mt-2 mb-6 bg-transparent border border-darkGrey rounded py-2 px-3 w-full'
@@ -105,7 +125,7 @@ export default function checkout() {
                     placeholder='3011TE'
                   />
                 </div>
-                <div className='col-span-2 sm:col-span-1'>
+                <div className='col-span-4 sm:col-span-2'>
                   <label className='font-semibold'>City</label>
                   <input
                     className='placeholder-lightGrey focus:ring-2 focus:ring-primary focus:border-transparent focus:outline-none mt-2 mb-6 bg-transparent border border-darkGrey rounded py-2 px-3 w-full'
@@ -147,19 +167,18 @@ export default function checkout() {
             </div>
           </div>
           <div className='pb-8 w-full lg:w-2/6'>
-            <h2 className='font-bold text-3xl mb-8'>Order Summary</h2>
-            <div className='p-5 w-full h-80 bg-gray-100 rounded-md'>
-              <Link href='/order-confirmation/success'>
-                <button className='bg-primary w-full py-2 px-3 rounded text-white mb-4'>
-                  Success
-                </button>
-              </Link>
-              <Link href='/order-confirmation/failed'>
-                <button className='bg-darkGrey w-full py-2 px-3 rounded text-white'>
-                  Failed
-                </button>
-              </Link>
-            </div>
+            <h2 className='font-bold text-2xl mb-8'>Order Summary</h2>
+            <div className='p-5 w-full h-80 bg-gray-100 rounded-md mb-4'></div>
+            <Link href='/order-confirmation/success'>
+              <button className='bg-primary w-full py-2 px-3 rounded text-white mb-4'>
+                Success
+              </button>
+            </Link>
+            <Link href='/order-confirmation/failed'>
+              <button className='bg-darkGrey w-full py-2 px-3 rounded text-white'>
+                Failed
+              </button>
+            </Link>
           </div>
         </div>
       </div>
