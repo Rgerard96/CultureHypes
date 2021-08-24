@@ -8,7 +8,7 @@ export default function ForgotPassword({ changeOpenModal }) {
     changeOpenModal('');
   };
   return (
-    <div className='py-8 px-5 sm:flex sm:items-center bg-white max-w-max rounded-t-2xl sm:rounded-2xl relative animate-fadeUp sm:animate-fadeIn'>
+    <div className='py-8 px-5 sm:flex sm:items-center bg-white max-w-max rounded-t-2xl sm:rounded-2xl sm:relative fixed bottom-0 animate-fadeUp sm:animate-fadeIn'>
       <Head>
         <title>CultureHypes - Forgot Password</title>
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />

@@ -24,8 +24,9 @@ export default function Header() {
               <p>0</p>
             </div>
           </Link>
+          <img src="/icons/user.svg" alt="Account" className='ml-4 h-5 cursor-pointer' onClick={() => setModal('login')}/>
           <p
-            className='ml-4 sm:ml-6 text-black text-opacity-60 hover:text-opacity-100 cursor-pointer border rounded-lg py-1 px-2'
+            className='hidden sm:block ml-6 text-black sm:text-opacity-60 hover:text-opacity-100 cursor-pointer border rounded-lg py-1 px-2 sm:border-none sm:p-0 sm:rounded-none'
             onClick={() => setModal('login')}
           >
             Account
