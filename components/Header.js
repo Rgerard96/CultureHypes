@@ -13,7 +13,7 @@ export default function Header() {
           <img
             src='/icons/menu.svg'
             alt='Menu'
-            className='mr-5 h-4 sm:hidden'
+            className='mr-5 h-6 sm:hidden'
           />
           <Link href='/'>
             <h1 className='font-bold sm:text-2xl cursor-pointer'>
@@ -32,7 +32,7 @@ export default function Header() {
               <img
                 src='/icons/shopping-basket.svg'
                 alt='Cart'
-                className='mr-2 h-4 '
+                className='mr-2 h-6 '
               />
               <p>0</p>
             </div>
@@ -40,7 +40,7 @@ export default function Header() {
           <img
             src='/icons/user.svg'
             alt='Account'
-            className='ml-4 h-4 cursor-pointer'
+            className='ml-4 h-6 cursor-pointer'
             onClick={() => setModal('login')}
           />
           <p
