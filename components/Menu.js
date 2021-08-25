@@ -7,7 +7,7 @@ export default function Menu({ modalOpen, changeOpenModal }) {
   };
   return (
     <div
-      className={`pt-16 pb-8 px-5 flex flex-col bg-white h-full fixed bottom-0 right-0 ${
+      className={`p-5 flex flex-col bg-white h-full fixed bottom-0 right-0 ${
         modalOpen === 'menu' ? 'animate-fadeInRight' : 'animate-fadeOutRight'
       }  w-3/4`}
     >
@@ -17,12 +17,14 @@ export default function Menu({ modalOpen, changeOpenModal }) {
       </Head>
       <ModalCloseButton closeModal={closeModal} />
 
-      <div className=''>
-          <div className='cursor-pointer bg-primary text-white rounded-lg py-2 px-3 text-center mb-6'>
-            Start Selling
-          </div>
+      <div className='text-center'>
+          <p className='mb-6'>Contact</p>
+          <p className='mb-6'>Our Policies</p>
           <div className='cursor-pointer border rounded-lg py-2 px-3 text-center mb-6' onClick={() => changeOpenModal('login')}>
             Account
+          </div>
+          <div className='cursor-pointer bg-primary text-white rounded-lg py-2 px-3 text-center mb-6'>
+            Start Selling
           </div>
         </div>
     </div>

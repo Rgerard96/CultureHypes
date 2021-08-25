@@ -2,11 +2,11 @@ import React from 'react';
 
 export default function ModalCloseButton({ closeModal }) {
   return (
-    <div className='absolute top-5 right-5 cursor-pointer'>
+    <div className='flex justify-end mb-5'>
       <img
         src='/icons/close.svg'
         alt='Menu'
-        className='h-4'
+        className='h-4 cursor-pointer'
         onClick={() => closeModal()}
       />
     </div>

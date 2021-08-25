@@ -17,10 +17,10 @@ export default function Modals({ modal, setModal }) {
   };
   return (
     <div
-      className={`bg-black bg-opacity-60 h-screen w-screen fixed inset-0 ${
+      className={`bg-black bg-opacity-60 w-screen fixed inset-0 ${
         modalOpen ? 'flex' : 'invisible'} ${
         modalOpen ? 'animate-scaleIn' : 'animate-scaleOut'
-      } justify-center sm:items-center items-end`}
+      } justify-center sm:items-center items-end sm:justify-center`}
     >
       {modalOpen === 'login' && <Login changeOpenModal={changeOpenModal} />}
       {modalOpen === 'registration' && (

@@ -6,7 +6,7 @@ export default function Login({ changeOpenModal }) {
     changeOpenModal('');
   };
   return (
-    <div className='pt-10 pb-8 px-5 sm:flex sm:items-center bg-white max-w-max rounded-t-2xl sm:rounded-2xl transform sm:relative fixed bottom-0 animate-fadeUp sm:animate-fadeIn'>
+    <div className='p-5 bg-white max-w-max rounded-t-2xl sm:rounded-2xl transform sm:relative fixed bottom-0 animate-fadeUp sm:animate-fadeIn'>
       <Head>
         <title>CultureHypes - Login</title>
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
