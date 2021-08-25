@@ -20,7 +20,7 @@ export default function Modals({ modal, setModal }) {
       className={`bg-black bg-opacity-60 w-screen fixed inset-0 ${
         modalOpen ? 'flex' : 'invisible'} ${
         modalOpen ? 'animate-scaleIn' : 'animate-scaleOut'
-      } justify-center sm:items-center items-end sm:justify-center`}
+      } justify-center sm:items-center items-end sm:justify-center z-10`}
     >
       {modalOpen === 'login' && <Login changeOpenModal={changeOpenModal} />}
       {modalOpen === 'registration' && (
