@@ -8,9 +8,7 @@ export default function Home() {
         <title>Culture Hypes</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <Link href='/food'>
-        <a>Food</a>
-      </Link>
+
     </div>
   );
 }

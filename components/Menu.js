@@ -1,0 +1,30 @@
+import Head from 'next/head';
+import ModalCloseButton from './ModalCloseButton';
+
+export default function Menu({ modalOpen, changeOpenModal }) {
+  const closeModal = () => {
+    changeOpenModal('');
+  };
+  return (
+    <div
+      className={`pt-16 pb-8 px-5 flex flex-col bg-white h-full fixed bottom-0 right-0 ${
+        modalOpen === 'menu' ? 'animate-fadeInRight' : 'animate-fadeOutRight'
+      }  w-3/4`}
+    >
+      <Head>
+        <title>CultureHypes - Login</title>
+        <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+      </Head>
+      <ModalCloseButton closeModal={closeModal} />
+
+      <div className=''>
+          <div className='cursor-pointer bg-primary text-white rounded-lg py-2 px-3 text-center mb-6'>
+            Start Selling
+          </div>
+          <div className='cursor-pointer border rounded-lg py-2 px-3 text-center mb-6' onClick={() => changeOpenModal('login')}>
+            Account
+          </div>
+        </div>
+    </div>
+  );
+}

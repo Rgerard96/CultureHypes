@@ -20,6 +20,10 @@ module.exports = {
         135: '135deg',
       },
       keyframes: {
+        scaleIn: {
+          from: { opacity: '0' },
+          to: { opacity: '100' },
+        },
         fadeIn: {
           from: { transform: 'scale(0.7)' },
           to: { transform: 'scale(1)' },
@@ -28,10 +32,16 @@ module.exports = {
           from: { transform: 'translateY(100%)' },
           to: { transform: 'translateY(0%)' },
         },
+        fadeInRight: {
+          from: { transform: 'translateX(100%)' },
+          to: { transform: 'translateX(0%)' },
+        },
       },
       animation: {
         fadeIn: 'fadeIn 500ms ease-in-out',
         fadeUp: 'fadeUp 500ms ease-in-out',
+        fadeInRight: 'fadeInRight 500ms ease-in-out both',
+        scaleIn: 'scaleIn 250ms ease-in-out both',
       },
     },
   },
