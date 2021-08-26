@@ -1,10 +1,9 @@
 import Head from 'next/head';
 import 'tailwindcss/tailwind.css';
-import Header from '../components/Header';
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div className='font-inter'>
+    <div className='font-inter min-h-screen text-darkGrey'>
       <Head>
         <link rel='preconnect' href='https://fonts.googleapis.com' />
         <link
@@ -17,7 +16,6 @@ function MyApp({ Component, pageProps }) {
           rel='stylesheet'
         />
       </Head>
-      <Header />
       <Component {...pageProps} />
     </div>
   );
