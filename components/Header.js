@@ -11,7 +11,7 @@ export default function Header() {
       <div className='container mx-auto flex justify-between items-center'>
         <div className='flex items-center justify-between w-full sm:w-max'>
           <Link href='/'>
-            <h1 className='font-bold text-xl sm:text-2xl cursor-pointer text-primary'>
+            <h1 className='font-bold font-carter text-xl sm:text-3xl cursor-pointer text-primary'>
               CultureHypes
             </h1>
           </Link>

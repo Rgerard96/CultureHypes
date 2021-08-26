@@ -19,6 +19,7 @@ module.exports = {
       },
       fontFamily: {
         inter: ['Inter', 'ui-sans-serif'],
+        carter: ['Carter One', 'ui-sans-serif'],
       },
       rotate: {
         135: '135deg',
