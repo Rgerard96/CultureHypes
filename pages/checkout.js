@@ -170,12 +170,12 @@ export default function checkout() {
             <h2 className='font-bold text-2xl mb-8'>Order Summary</h2>
             <div className='p-5 w-full h-80 bg-gray-100 rounded-md mb-4'></div>
             <Link href='/order-confirmation/success'>
-              <button className='bg-primary w-full py-2 px-3 rounded text-white mb-4'>
+              <button className='bg-primary w-full py-2 px-3 rounded-lg text-white mb-4'>
                 Success
               </button>
             </Link>
             <Link href='/order-confirmation/failed'>
-              <button className='bg-darkGrey w-full py-2 px-3 rounded text-white'>
+              <button className='bg-darkGrey w-full py-2 px-3 rounded-lg text-white'>
                 Failed
               </button>
             </Link>

@@ -22,7 +22,7 @@ export default function failed() {
           <h4>Payment for your order could not be proceed, try again.</h4>
         </div>
         <Link href='/checkout'>
-          <button className='bg-primary w-full py-2 px-3 rounded text-white mb-4'>
+          <button className='bg-primary w-full py-2 px-3 rounded-lg text-white mb-4'>
             Back to Checkout
           </button>
         </Link>
