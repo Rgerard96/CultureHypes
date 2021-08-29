@@ -14,7 +14,11 @@ export default function SearchBar() {
             className='border-none w-full focus:outline-none focus:ring-0 p-0'
           />
         </div>
-        <img src='/icons/filter.svg' alt='Filter' className='ml-5 w-5   cursor-pointer' />
+        <img
+          src='/icons/filter.svg'
+          alt='Filter'
+          className='ml-5 w-5   cursor-pointer'
+        />
       </div>
     </div>
   );
