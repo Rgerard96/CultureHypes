@@ -6,7 +6,7 @@ export default function ModalCloseButton({ closeModal }) {
       <img
         src='/icons/close.svg'
         alt='Menu'
-        className='w-4 cursor-pointer'
+        className='w-5 sm:w-4 cursor-pointer'
         onClick={() => closeModal()}
       />
     </div>
