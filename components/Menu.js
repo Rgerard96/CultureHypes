@@ -11,7 +11,7 @@ export default function Menu({ modalOpen, changeOpenModal }) {
     <div
       className={`p-5 flex flex-col bg-white h-full fixed bottom-0 right-0 ${
         modalOpen === 'menu' ? 'animate-fadeInRight' : 'animate-fadeOutRight'
-      }  w-3/4`}
+      }  w-3/4 z-20`}
     >
       <Head>
         <title>CultureHypes - Login</title>
