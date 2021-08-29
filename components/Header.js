@@ -18,7 +18,7 @@ export default function Header() {
           <img
             src='/icons/menu.svg'
             alt='Menu'
-            className='h-4 sm:hidden'
+            className='w-4 sm:hidden'
             onClick={() => setModal('menu')}
           />
         </div>
