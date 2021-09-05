@@ -17,7 +17,7 @@ export default function Header() {
             onClick={() => setModal('menu')}
           />
           <Link href='/'>
-            <h1 className='font-bold font-carter text-xl sm:text-3xl cursor-pointer text-primary'>
+            <h1 className='font-bold font-carter text-xl md:text-2xl lg:text-3xl cursor-pointer text-primary'>
               CultureHypes
             </h1>
           </Link>
