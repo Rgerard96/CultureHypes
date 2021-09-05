@@ -9,8 +9,8 @@ export default function Menu({ modalOpen, changeOpenModal }) {
   };
   return (
     <div
-      className={`p-5 flex flex-col bg-white h-full fixed bottom-0 right-0 ${
-        modalOpen === 'menu' ? 'animate-fadeInRight' : 'animate-fadeOutRight'
+      className={`p-5 flex flex-col bg-white h-full fixed bottom-0 left-0 ${
+        modalOpen === 'menu' ? 'animate-fadeInLeft' : 'animate-fadeOutLeft'
       }  w-3/4 z-20`}
     >
       <Head>
@@ -27,12 +27,6 @@ export default function Menu({ modalOpen, changeOpenModal }) {
           onClick={() => router.push('/checkout')}
         >
           Checkout
-        </div>
-        <div
-          className='cursor-pointer border rounded-lg py-2 px-3 text-center mb-6'
-          onClick={() => changeOpenModal('login')}
-        >
-          Account
         </div>
         <div className='cursor-pointer bg-primary text-white rounded-lg py-2 px-3 text-center mb-6'>
           Start Selling

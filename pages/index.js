@@ -6,7 +6,7 @@ import Footer from '../components/Footer';
 import Header from '../components/Header';
 import SearchBar from '../components/SearchBar';
 
-export default function Home() {
+export default function feed() {
   const router = useRouter();
   return (
     <div className=''>

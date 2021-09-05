@@ -10,16 +10,22 @@ export default function Header() {
       <Modals modal={modal} setModal={setModal} />
       <div className='container mx-auto flex justify-between items-center'>
         <div className='flex items-center justify-between w-full sm:w-max'>
+          <img
+            src='/icons/menu.svg'
+            alt='Menu'
+            className='w-5 sm:hidden'
+            onClick={() => setModal('menu')}
+          />
           <Link href='/'>
             <h1 className='font-bold font-carter text-xl sm:text-3xl cursor-pointer text-primary'>
               CultureHypes
             </h1>
           </Link>
           <img
-            src='/icons/menu.svg'
-            alt='Menu'
+            src='/icons/avatar.svg'
+            alt='Avatar'
             className='w-5 sm:hidden'
-            onClick={() => setModal('menu')}
+            onClick={() => setModal('login')}
           />
         </div>
         <div className='hidden sm:flex'>

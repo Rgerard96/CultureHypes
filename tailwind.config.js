@@ -37,15 +37,15 @@ module.exports = {
           from: { transform: 'translateY(100%)' },
           to: { transform: 'translateY(0%)' },
         },
-        fadeInRight: {
-          from: { transform: 'translateX(100%)' },
+        fadeInLeft: {
+          from: { transform: 'translateX(-100%)' },
           to: { transform: 'translateX(0%)' },
         },
       },
       animation: {
         fadeIn: 'fadeIn 500ms ease-in-out',
         fadeUp: 'fadeUp 500ms ease-in-out',
-        fadeInRight: 'fadeInRight 500ms ease-in-out both',
+        fadeInLeft: 'fadeInLeft 500ms ease-in-out both',
         scaleIn: 'scaleIn 250ms ease-in-out both',
       },
     },
