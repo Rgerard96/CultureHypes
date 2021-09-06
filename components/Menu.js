@@ -20,8 +20,10 @@ export default function Menu({ modalOpen, changeOpenModal }) {
       <ModalCloseButton closeModal={closeModal} />
 
       <div className='text-center'>
-        <p className='mb-6'>Contact</p>
-        <p className='mb-6'>Our Policies</p>
+        <p className='mb-6' onClick={() => router.push('/contact')}>
+          Contact
+        </p>
+        <p className='mb-6' onClick={() => router.push('/policies')}>Our Policies</p>
         <div
           className='cursor-pointer border rounded-lg py-2 px-3 text-center mb-6'
           onClick={() => router.push('/checkout')}

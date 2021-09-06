@@ -1,9 +1,11 @@
 import Link from 'next/link';
 import React, { useState } from 'react';
 import Modals from './Modals';
+import { useRouter } from 'next/router';
 
 export default function Header() {
   const [modal, setModal] = useState('');
+  const router = useRouter();
   console.log(modal);
   return (
     <div className='px-5 py-3 border-b'>
@@ -29,10 +31,16 @@ export default function Header() {
           />
         </div>
         <div className='hidden sm:flex'>
-          <p className='cursor-pointer pr-6 border-r text-black sm:text-opacity-60 sm:hover:text-opacity-100'>
+          <p
+            className='cursor-pointer pr-6 border-r text-black sm:text-opacity-60 sm:hover:text-opacity-100'
+            onClick={() => router.push('/contact')}
+          >
             Contact
           </p>
-          <p className='ml-6 cursor-pointer text-black sm:text-opacity-60 sm:hover:text-opacity-100'>
+          <p
+            className='ml-6 cursor-pointer text-black sm:text-opacity-60 sm:hover:text-opacity-100'
+            onClick={() => router.push('/policies')}
+          >
             Our Policies
           </p>
         </div>
