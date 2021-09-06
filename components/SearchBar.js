@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Modals from './Modals';
 
 export default function SearchBar() {
+  const [modal, setModal] = useState('');
   return (
     <div className='px-5 py-3 border-b sticky top-0 bg-white'>
+      <Modals modal={modal} setModal={setModal} />
       <div className='container flex items-center justify-end mx-auto'>
         <div className='group focus-within:border-primary flex items-center border rounded-lg px-3 py-2 w-full lg:w-96'>
           <img src='/icons/search.svg' alt='Search' className='w-4  mr-3' />
@@ -18,6 +21,7 @@ export default function SearchBar() {
           src='/icons/location.svg'
           alt='Location'
           className='ml-5 w-5 cursor-pointer'
+          onClick={() => setModal('postalCode')}
         />
       </div>
     </div>

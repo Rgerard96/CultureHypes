@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import ForgotPassword from './ForgotPassword';
 import Login from './Login';
 import Menu from './Menu';
+import PostalCode from './PostalCode';
 import Registration from './Registration';
 
 export default function Modals({ modal, setModal }) {
@@ -17,7 +18,7 @@ export default function Modals({ modal, setModal }) {
   };
   return (
     <div
-      className={`bg-black bg-opacity-60 w-screen fixed inset-0 ${
+      className={`bg-black bg-opacity-70 w-screen fixed inset-0 ${
         modalOpen ? 'flex' : 'invisible'
       } ${
         modalOpen && 'animate-scaleIn'
@@ -30,6 +31,9 @@ export default function Modals({ modal, setModal }) {
       {modalOpen === 'forgotPassword' && (
         <ForgotPassword changeOpenModal={changeOpenModal} />
       )}
+        {modalOpen === 'postalCode' && (
+          <PostalCode changeOpenModal={changeOpenModal} />
+        )}
       {modalOpen === 'menu' && (
         <Menu modalOpen={modalOpen} changeOpenModal={changeOpenModal} />
       )}
