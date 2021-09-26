@@ -1,7 +1,9 @@
 import Head from 'next/head';
+import { useRouter } from 'next/router';
 import ModalCloseButton from './ModalCloseButton';
 
 export default function Login({ changeOpenModal }) {
+  const router = useRouter();
   const closeModal = () => {
     changeOpenModal('');
   };
@@ -13,14 +15,14 @@ export default function Login({ changeOpenModal }) {
       </Head>
       <ModalCloseButton closeModal={closeModal} />
       <div className='mx-auto max-w-sm text-center'>
-        <div className='mb-6'>
+        <div className='mb-4'>
           <h2 className='font-bold text-2xl mb-1'>Hello!</h2>
           <p className=''>Please sign in to your account.</p>
         </div>
-        <div className='mb-6 text-left'>
+        <div className='mb-4 text-left'>
           <label className=''>Email Address</label>
           <input
-            className='placeholder-lightGrey focus:ring-2 focus:ring-primary focus:border-transparent focus:outline-none mt-2 mb-6 bg-transparent border border-darkGrey rounded py-2 px-3 w-full'
+            className='placeholder-lightGrey focus:ring-2 focus:ring-primary focus:border-transparent focus:outline-none mt-2 mb-4 bg-transparent border border-darkGrey rounded py-2 px-3 w-full'
             type='text'
             name='email'
             id='email'
@@ -28,7 +30,7 @@ export default function Login({ changeOpenModal }) {
           />
           <label className=''>Password</label>
           <input
-            className='placeholder-lightGrey focus:ring-2 focus:ring-primary focus:border-transparent focus:outline-none mt-2 mb-6 bg-transparent border border-darkGrey rounded py-2 px-3 w-full'
+            className='placeholder-lightGrey focus:ring-2 focus:ring-primary focus:border-transparent focus:outline-none mt-2 mb-4 bg-transparent border border-darkGrey rounded py-2 px-3 w-full'
             type='password'
             name='password'
             id='password'
@@ -49,7 +51,7 @@ export default function Login({ changeOpenModal }) {
             Don't have an account?{' '}
             <a
               className='text-darkGrey font-bold cursor-pointer break-normal hover:text-primary'
-              onClick={() => changeOpenModal('registration')}
+              onClick={() => router.push('/registration')}
             >
               Sign Up
             </a>

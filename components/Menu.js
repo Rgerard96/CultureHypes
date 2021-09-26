@@ -23,14 +23,19 @@ export default function Menu({ modalOpen, changeOpenModal }) {
         <p className='mb-6' onClick={() => router.push('/contact')}>
           Contact
         </p>
-        <p className='mb-6' onClick={() => router.push('/policies')}>Our Policies</p>
+        <p className='mb-6' onClick={() => router.push('/policies')}>
+          Our Policies
+        </p>
         <div
           className='cursor-pointer border rounded-lg py-2 px-3 text-center mb-6'
           onClick={() => router.push('/checkout')}
         >
           Checkout
         </div>
-        <div className='cursor-pointer bg-primary text-white rounded-lg py-2 px-3 text-center mb-6'>
+        <div
+          className='cursor-pointer bg-primary text-white rounded-lg py-2 px-3 text-center mb-6'
+          onClick={() => router.push('/start-selling')}
+        >
           Start Selling
         </div>
       </div>

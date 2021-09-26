@@ -15,7 +15,7 @@ export default function ForgotPassword({ changeOpenModal }) {
       </Head>
       <ModalCloseButton closeModal={closeModal} />
       <div className='mx-auto max-w-sm text-center'>
-        <div className='mb-6'>
+        <div className='mb-4'>
           <h2 className='font-bold text-2xl mb-1'>Forgot your password?</h2>
           <p className=''>
             Enter your email address below and choose a new password.
@@ -24,7 +24,7 @@ export default function ForgotPassword({ changeOpenModal }) {
         <div className='text-left'>
           <label className=''>Email Address</label>
           <input
-            className='placeholder-lightGrey focus:ring-2 focus:ring-primary focus:border-transparent focus:outline-none mt-2 mb-6 bg-transparent border border-darkGrey rounded-lg py-2 px-3 w-full'
+            className='placeholder-lightGrey focus:ring-2 focus:ring-primary focus:border-transparent focus:outline-none mt-2 mb-4 bg-transparent border border-darkGrey rounded-lg py-2 px-3 w-full'
             type='text'
             name='email'
             id='email'
@@ -32,7 +32,7 @@ export default function ForgotPassword({ changeOpenModal }) {
           />
           <label className=''>Choose a new password</label>
           <input
-            className='placeholder-lightGrey focus:ring-2 focus:ring-primary focus:border-transparent focus:outline-none mt-2 mb-6 bg-transparent border border-darkGrey rounded py-2 px-3 w-full'
+            className='placeholder-lightGrey focus:ring-2 focus:ring-primary focus:border-transparent focus:outline-none mt-2 mb-4 bg-transparent border border-darkGrey rounded py-2 px-3 w-full'
             type='password'
             name='password'
             id='password'
@@ -40,7 +40,7 @@ export default function ForgotPassword({ changeOpenModal }) {
           />
         </div>
         <div>
-          <button className='bg-primary w-full py-2 px-3 rounded-lg text-white mb-6'>
+          <button className='bg-primary w-full py-2 px-3 rounded-lg text-white mb-4'>
             Send reset link
           </button>
           <p

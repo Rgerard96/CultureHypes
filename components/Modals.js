@@ -3,7 +3,6 @@ import ForgotPassword from './ForgotPassword';
 import Login from './Login';
 import Menu from './Menu';
 import PostalCode from './PostalCode';
-import Registration from './Registration';
 
 export default function Modals({ modal, setModal }) {
   const [modalOpen, setModalOpen] = useState();
@@ -25,9 +24,6 @@ export default function Modals({ modal, setModal }) {
       } justify-center sm:items-center items-end sm:justify-center z-10 pointer-events-auto`}
     >
       {modalOpen === 'login' && <Login changeOpenModal={changeOpenModal} />}
-      {modalOpen === 'registration' && (
-        <Registration changeOpenModal={changeOpenModal} />
-      )}
       {modalOpen === 'forgotPassword' && (
         <ForgotPassword changeOpenModal={changeOpenModal} />
       )}

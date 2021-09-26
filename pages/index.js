@@ -18,6 +18,7 @@ export default function feed() {
       <SearchBar />
       <div className='container mx-auto py-10 px-5 2xl:px-0'>
         <div className='grid gap-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5'>
+          {/* <FoodCard/>
           <FoodCard/>
           <FoodCard/>
           <FoodCard/>
@@ -26,8 +27,7 @@ export default function feed() {
           <FoodCard/>
           <FoodCard/>
           <FoodCard/>
-          <FoodCard/>
-          <FoodCard/>
+          <FoodCard/> */}
         </div>
       </div>
     </div>

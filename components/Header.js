@@ -6,9 +6,8 @@ import { useRouter } from 'next/router';
 export default function Header() {
   const [modal, setModal] = useState('');
   const router = useRouter();
-  console.log(modal);
   return (
-    <div className='px-5 py-3 border-b'>
+    <div className='px-5 py-2 border-b'>
       <Modals modal={modal} setModal={setModal} />
       <div className='container mx-auto flex justify-between items-center'>
         <div className='flex items-center justify-between w-full sm:w-max'>
@@ -19,7 +18,7 @@ export default function Header() {
             onClick={() => setModal('menu')}
           />
           <Link href='/'>
-            <h1 className='font-bold font-carter text-xl md:text-2xl lg:text-3xl cursor-pointer text-primary'>
+            <h1 className='font-bold font-carter text-xl md:text-2xl cursor-pointer text-primary'>
               CultureHypes
             </h1>
           </Link>
@@ -51,7 +50,10 @@ export default function Header() {
           >
             Account
           </p>
-          <div className='cursor-pointer ml-6 bg-primary text-white rounded-lg py-2 px-3 hover:bg-opacity-90 '>
+          <div
+            className='cursor-pointer ml-6 bg-primary text-white rounded-lg py-1.5 px-2 hover:bg-opacity-90 '
+            onClick={() => router.push('/start-selling')}
+          >
             Start Selling
           </div>
         </div>
